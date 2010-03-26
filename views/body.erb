@@ -1,0 +1,10 @@
+<?xml version="1.1" encoding="US-ASCII"?>
+<constituency name='<%= @constituency %>'>
+<%	@candidates.each do |candidate| %>
+	<candidate>
+		<% candidate.each do |key, value| %>
+        	<<%= key %>><%= value %></<%= key %>>	
+		<% end %>
+	</candidate>
+<% end %>
+</constituency>
