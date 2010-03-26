@@ -1,0 +1,14 @@
+MP-o-Matic Democracy Live Parsing Service
+=========================================
+
+What does this do?
+==================
+This service takes a request in the format http://www.adoptioncurve.net:4567/candidate/nnnnn, where nnnnnn is the BBC Democracy Live person ID, and magically returns an XML file containing the parsed electoral data for that MP's constituency.
+
+How does it work?
+=================
+Magic! Or more prosaically, a Sinatra service that uses a combination of Open-URI and Hpricot to retrieve the relevant page, parse out the ever-so-nicely-marked-up HTML and convert it into an XML feed.
+
+Why would I use this?
+=====================
+I have no idea. Personally, I use it to service MP-o-Matic, my iPhone client for the They Work For You API.

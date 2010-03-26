@@ -1,7 +1,24 @@
 <html>
 <body>
 	<h1>MP-o-Matic Democracy Live Parsing Service</h1>
-	Thank you for calling, have a nice day.
+	
+	Welcome to the MP-o-Matic BBC Democracy Live Parsing Service.
+	
+	<h3>What does this do?</h3>
+	
+	This service takes a request in the format <code>http://www.adoptioncurve.net:4567/candidate/nnnnn</code>, where <code>nnnnnn</code> is the BBC Democracy Live person ID, and magically returns an XML file containing the parsed electoral data for that MP's constituency.
+	
+	<h3>How does it work</h3>
+
+	Magic!   Or more prosaically, a Sinatra service that uses a combination of Open-URI and Hpricot to retrieve the relevant page, parse out the ever-so-nicely-marked-up HTML and convert it into an XML feed.
+	
+	<h3>Why would I use this?</h3>
+	
+	I have no idea. Personally, I use it to service MP-o-Matic, my iPhone client for the They Work For You API.
+	
+	<h3>How can I get in touch with you?</h3>
+	I'm tim@timduckett.co.uk
+	
 </body>
 </html>
 	
